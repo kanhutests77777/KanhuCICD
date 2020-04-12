@@ -15,6 +15,7 @@ public class Test1
 	//driver.manage().window().maximize();
 	//driver.close();
 	System.out.println("---kanhu---------");
+	System.out.println("--barik--");
 	}
 
 
