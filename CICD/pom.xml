@@ -9,10 +9,7 @@
 
   <name>CICD</name>
   <url>http://maven.apache.org</url>
-  <properties>
-		<jre.level>1.7</jre.level>
-		<jdk.level>1.7</jdk.level>
-	</properties>
+  
 
 	<dependencies>
 
@@ -86,8 +83,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>10.0</source>
+					<target>10.0</target>
 				</configuration>
 			</plugin>
 
@@ -96,23 +93,8 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.19.1</version>
 				<configuration>
-					<systemPropertyVariables>
-						<property>
-							<name>userName</name>
-							<value>${userName}</value>
-						</property>
-						<property>
-							<name>password</name>
-							<value>${password}</value>
-						</property>
-						<property>
-							<name>url</name>
-							<value>${url}</value>
-						</property>
-					</systemPropertyVariables>
-
 					<suiteXmlFiles>
-						<suiteXmlFile>src/main/resources/testSuite/AllTest.xml</suiteXmlFile>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
